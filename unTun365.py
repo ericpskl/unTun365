@@ -23,8 +23,8 @@
 import requests
 import uuid
 
-# Your Office 365 tenant name
-tenant='fireoak365'
+# Your Office 365 tenant name.  This does not seem to be required, but was referenced in the Microsoft documentation
+tenant='planetexpress'
 
 # Where to write the config file - we recommend dropping the file into the "client-config-dir" specified by your openVPN config file
 # Naming this file "DEFAULT" will cause the configurations to be applied to all clients that do not otherwise have a specific config file
@@ -50,9 +50,9 @@ try:
 						configFile += 'push "route '+ ip + ' net_gateway"' + "\n"
 						subnets += 1
 
-		# OpenVPN clients do not understand CIDR notation (tested under Windows 10, at least), so we have to change the netblocks 
-		# received from Microsoft into subnet masks.  The following approach is faster/lazier than doing the conversions back and forth 
-		# from string to binary to do the actual math
+		# OpenVPN clients do not understand CIDR notation (tested under Windows 10, at least), so we have to change the data
+		# received from Microsoft into subnet masks.  The following approach is faster/lazier than doing the conversions 
+		# back and forth from string to binary to do the actual subnet math
 
 		cidr2mask = {}
 
