@@ -8,7 +8,7 @@ Incorporating the generated syntax into an OpenVPN server's config file has the 
 
 You'll need Python 3 with a few very standard libraries (requests and UUID). These are probably already installed under your distro.
 
-I recommend configuring the script to output to a file called `DEFAULT` placed under the OpenVPN's client configuration directory. This has the advantage of not interacting with OpenVPN server config file directly.  Updates to client configuration files do not require a restart of the OpenVPN server to take effect.  Client configuration directives are loaded from disk each time a new connection is established.
+I recommend configuring the script to output to a file called `DEFAULT` placed under the OpenVPN's client configuration directory. This has the advantage of not interacting with OpenVPN server config file directly.  Updates to client configuration files do not require a restart of the OpenVPN server to take effect; client configuration directives are loaded from disk each time a new connection is established.
 
 You can run this out of cron for automatic updates, although in our testing, the data does not change frequently.  Once a week is probably sufficent.
 
