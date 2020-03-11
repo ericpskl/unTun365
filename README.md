@@ -25,7 +25,7 @@ better a second default gateway route of `0.0.0.0/0`
 
 ## Permissions
 
-Don't run this as root.  Configure an appropriate user account and assign appropriate permissions on the DEFAULT file.
+Don't run this as root! Configure an appropriate user account and assign appropriate write permissions to the `DEFAULT` file.
 
 ## Testing
 
