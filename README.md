@@ -27,6 +27,12 @@ better a second default gateway route of `0.0.0.0/0`
 
 Don't run this as root.  Configure an appropriate user account and assign appropriate permissions on the DEFAULT file.
 
+## Testing
+
+From a connected OpenVPN client, check the routing table to confirm that the downloaded routes have been installed.  Under Windows, the output of the `show route` command should have about 200 additional routes loaded.
+
+![Office 365 Routes on a connected Win10 Client](link-to-image)
+
 ## Caveats
 
 This was only tested under Linux.  We've also included only the IPv4 routes, as this was written to help one of our international clients who is currently only using IPv4 in their OpenVPN environment.
