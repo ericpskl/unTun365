@@ -1,6 +1,6 @@
 # unTun365
 
-This Python script downloads (directly from Microsoft!) the list of IPv4 and IPv6 networks used to provide Office 365 services. It then converts the IPv4 netblocks into syntax compatible with an OpenVPN server.
+unTun365 downloads (directly from Microsoft!) the list of IPv4 and IPv6 networks used to provide Office 365 services. It then converts the IPv4 netblocks into syntax compatible with an OpenVPN server.
 
 Incorporating the generated syntax into an OpenVPN server's config file has the effect of causing connected clients to route Office 365 traffic directly to their default LAN gateway and not across the VPN tunnel.  This increases performance for the end user while significantly reducing load on enterprise networks. 
 
