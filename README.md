@@ -6,7 +6,7 @@ Incorporating the generated syntax into an OpenVPN server's config file has the 
 
 ## Usage
 
-You'll need Python 3 with a few very standard libraries (requests and UUID). These are probably already installed under your distro.
+You'll need Python 3 with a few standard libraries (`requests` and `uuid`). These are probably already installed under your distro.
 
 I recommend configuring the script to output to a file called `DEFAULT` placed under the OpenVPN's client configuration directory. This has the advantage of not interacting with OpenVPN server config file directly.  Updates to client configuration files do not require a restart of the OpenVPN server to take effect; client configuration directives are loaded from disk each time a new connection is established.
 
@@ -21,7 +21,7 @@ In your OpenVPN server config file, establish a location for the client configur
 We also recommend using the following syntax, which will push `0.0.0.0/1` and `128.0.0.0/1` routes to clients, which is
 better a second default gateway route of `0.0.0.0/0`
 
-push "redirect-gateway def1"
+`push "redirect-gateway def1"`
 
 ## Permissions
 
