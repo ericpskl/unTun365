@@ -18,7 +18,7 @@ In your OpenVPN server config file, establish a location for the client configur
 
 `client-config-dir /etc/openvpn/ccd`
 
-We also recommend using the following syntax, which will push 0.0.0.0/1 and 128.0.0.0/1 routes to clients, which is
+We also recommend using the following syntax, which will push `0.0.0.0/1` and `128.0.0.0/1` routes to clients, which is
 better a second default gateway route of `0.0.0.0/0`
 
 push "redirect-gateway def1"
