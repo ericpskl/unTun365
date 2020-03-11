@@ -29,7 +29,7 @@ Don't run this as root! Configure an appropriate user account and assign appropr
 
 ## Testing
 
-From a connected OpenVPN client, check the routing table to confirm that the downloaded routes have been installed.  Under Windows, the output of the `show route` command should have about 200 additional routes loaded with the next-hop pointing to the client's local default gateway.
+From a connected OpenVPN client, check the routing table to confirm that the downloaded routes have been installed.  Under Windows, the output of the `route print` command should have about 200 additional routes loaded with the next-hop pointing to the client's local default gateway.
 
 ![Office 365 Routes on a connected Win10 Client](https://raw.githubusercontent.com/ericpskl/unTun365/master/routes.png)
 
