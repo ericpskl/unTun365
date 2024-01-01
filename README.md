@@ -37,6 +37,3 @@ From a connected OpenVPN client, check the routing table to confirm that the dow
 
 This was only tested under Linux.  We've also included only the IPv4 routes, as this was written to help one of our international clients who is currently only using IPv4 in their OpenVPN environment.
 
-## Read More
-
-See https://fireoakstrategies.com/split-tunnel-vpn/
