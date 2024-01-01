@@ -4,8 +4,6 @@
 #
 # v0.1: 10 March 2020.  Only exports IPv4 subnets to the config file
 #
-# (c) 2020 FireOak Strategies, LLC
-#          https://fireoakstrategies.com 
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
